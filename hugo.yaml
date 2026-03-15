@@ -25,10 +25,7 @@ params:
   profileMode:
     enabled: true
     title: "박재림"
-    subtitle: |
-      정산 도메인 기반 대용량 데이터 처리 백엔드 엔지니어
-      <br><br>
-      Kotlin · Spring Boot · Spring Batch · MySQL · AWS
+    subtitle: "정산 도메인 기반 대용량 데이터 처리 백엔드 엔지니어<br><br>Kotlin · Spring Boot · Spring Batch · MySQL · AWS"
     buttons:
       - name: "이력서"
         url: /resume/
