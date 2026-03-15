@@ -141,4 +141,4 @@ draft: false
 
 ## 언어
 
-영어 일상 회화 &nbsp;|&nbsp; TOEIC Speaking 150 / IH (2024.09)
+영어 &nbsp;|&nbsp; TOEIC Speaking 150 / IH (2024.09)
