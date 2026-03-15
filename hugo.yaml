@@ -1,5 +1,6 @@
 baseURL: "https://ParkJaeRim.github.io/"
 languageCode: "ko-KR"
+defaultContentLanguage: "ko"
 title: "ParkJaeRim Dev Blog"
 theme: "PaperMod"
 paginate: 10
