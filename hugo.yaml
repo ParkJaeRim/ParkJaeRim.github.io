@@ -22,13 +22,26 @@ params:
   ShowCodeCopyButtons: true
   ShowToc: true
 
-  homeInfoParams:
-    Title: "👋 안녕하세요"
-    Content: "개발하면서 배운 것들을 기록하는 공간입니다."
+  profileMode:
+    enabled: true
+    title: "박재림"
+    subtitle: |
+      정산 도메인 기반 대용량 데이터 처리 백엔드 엔지니어
+      <br><br>
+      Kotlin · Spring Boot · Spring Batch · MySQL · AWS
+    buttons:
+      - name: "이력서"
+        url: /resume/
+      - name: "GitHub"
+        url: "https://github.com/ParkJaeRim"
 
   socialIcons:
     - name: github
       url: "https://github.com/ParkJaeRim"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/jaerim-park-107808161/"
+    - name: email
+      url: "mailto:dbahck200@gmail.com"
 
 menu:
   main:
