@@ -40,6 +40,10 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: resume
+      name: 이력서
+      url: /resume/
+      weight: 30
 
 taxonomies:
   tag: tags
