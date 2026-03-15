@@ -57,3 +57,8 @@ menu:
 
 taxonomies:
   tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
