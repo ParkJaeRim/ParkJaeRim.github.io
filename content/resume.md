@@ -140,4 +140,4 @@ draft: false
 
 ## 언어
 
-영어 일상 회화 &nbsp;|&nbsp; TOEIC Speaking 130 / LEVEL 6 (2022.03)
+영어 일상 회화 &nbsp;|&nbsp; TOEIC Speaking 150 / IH (2024.09)
