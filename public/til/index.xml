@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tils on ParkJaeRim Dev Blog</title>
+    <link>http://localhost:1313/til/</link>
+    <description>Recent content in Tils on ParkJaeRim Dev Blog</description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/til/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ktlint - Kotlin 코드 스타일 자동화</title>
+      <link>http://localhost:1313/til/2025-03-15-ktlint/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/til/2025-03-15-ktlint/</guid>
+      <description>&lt;h2 id=&#34;ktlint란&#34;&gt;ktlint란?&lt;/h2&gt;
+&lt;p&gt;Kotlin 코드 스타일을 검사하고 자동으로 포맷해주는 린터.
+&lt;code&gt;.editorconfig&lt;/code&gt; 없이도 기본 규칙만으로 일관된 코드 스타일을 유지할 수 있다.&lt;/p&gt;
+&lt;h2 id=&#34;설정-위치&#34;&gt;설정 위치&lt;/h2&gt;
+&lt;p&gt;프로젝트에서 두 곳에서 관리된다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;build.gradle.kts&lt;/code&gt; (루트)&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ktlint {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    version.&lt;span style=&#34;color:#66d9ef&#34;&gt;set&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;Version&lt;/span&gt;.ktLintTool)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    filter {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        exclude { &lt;span style=&#34;color:#66d9ef&#34;&gt;it&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;file&lt;/span&gt;.path.contains(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/build/&amp;#34;&lt;/span&gt;) }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;buildSrc/src/main/kotlin/Version.kt&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;val&lt;/span&gt; ktLintTool = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1.7.1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;주요-명령어&#34;&gt;주요 명령어&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 스타일 위반 검사&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./gradlew ktlintCheck
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# 자동 포맷 (수정 가능한 항목만)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./gradlew ktlintFormat
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;자동-수정-가능한-규칙들&#34;&gt;자동 수정 가능한 규칙들&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;import 알파벳 순 정렬&lt;/li&gt;
+&lt;li&gt;불필요한 빈 줄 제거 (연속 2줄 이상)&lt;/li&gt;
+&lt;li&gt;들여쓰기 (space 4칸)&lt;/li&gt;
+&lt;li&gt;줄 끝 공백 제거&lt;/li&gt;
+&lt;li&gt;파일 끝 개행 추가&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{&lt;/code&gt; 앞 공백, &lt;code&gt;:&lt;/code&gt; 뒤 공백 등 spacing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;pre-commit-hook-연동&#34;&gt;pre-commit hook 연동&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;git commit&lt;/code&gt; 시 자동으로 ktlintFormat → ktlintCheck 순서로 실행되도록 Claude Code hook 설정.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

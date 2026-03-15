@@ -1,0 +1,45 @@
+baseURL: "https://ParkJaeRim.github.io/"
+languageCode: "ko-KR"
+title: "ParkJaeRim Dev Blog"
+theme: "PaperMod"
+paginate: 10
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  env: production
+  title: "ParkJaeRim Dev Blog"
+  description: "개발하면서 배운 것들을 기록합니다."
+  author: "ParkJaeRim"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+
+  homeInfoParams:
+    Title: "👋 안녕하세요"
+    Content: "개발하면서 배운 것들을 기록하는 공간입니다."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ParkJaeRim"
+
+menu:
+  main:
+    - identifier: til
+      name: TIL
+      url: /til/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+
+taxonomies:
+  tag: tags
