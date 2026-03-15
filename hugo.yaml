@@ -46,10 +46,6 @@ menu:
       name: TIL
       url: /til/
       weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
     - identifier: resume
       name: 이력서
       url: /resume/
