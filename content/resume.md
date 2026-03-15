@@ -125,6 +125,19 @@ draft: false
 
 ---
 
+### AI Native 플랫폼 개발
+**백엔드 개발** &nbsp;|&nbsp; 2025.12 - 진행중
+
+Claude Code 기반 AI Native 방식으로 이커머스 플랫폼 백엔드 개발 참여
+
+`Kotlin · Spring Boot · Spring Batch · GraphQL(DGS) · MySQL`
+
+- 수백만 셀러가 사용하는 글로벌 이커머스 SaaS 플랫폼(GraphQL 기반) 연동 — 주문/환불/취소 처리 아키텍처 설계 및 구현
+- 이상주문 탐지 및 Dispute(차지백) 이력 추적 시스템 구현
+- 정산 시스템 구축 — 세금계산서 발행, 파트너센터 정산 API, GraphQL 통합
+
+---
+
 ## 학력
 
 **인천대학교** &nbsp;|&nbsp; 전자공학과 학사 &nbsp;|&nbsp; 2015.03 - 2020.02
