@@ -30,6 +30,17 @@ draft: false
 ### 주식회사 카카오스타일 (Kakao Style Corp.)
 **백엔드 개발 매니저** &nbsp;|&nbsp; 2021.04 - 재직중 (5년)
 
+#### AI Native 플랫폼 개발 (2025.12 - 진행중)
+> Claude Code 기반 AI Native 방식으로 이커머스 플랫폼 백엔드 개발 참여
+
+- 수백만 셀러가 사용하는 글로벌 이커머스 SaaS 플랫폼(GraphQL 기반) 연동 — 주문/환불/취소 처리 아키텍처 설계 및 구현
+- 이상주문 탐지 및 Dispute(차지백) 이력 추적 시스템 구현
+- 정산 시스템 구축 — 세금계산서 발행, 파트너센터 정산 API, GraphQL 통합
+
+**기술:** Kotlin · Spring Boot · Spring Batch · GraphQL(DGS) · MySQL
+
+---
+
 #### 경정청구 재정산 시스템 구축 (2024.06 - 2025.02)
 > 과거 다년간 정산 데이터를 재계산하여 세무 환급 산출을 위한 재정산 시스템 구축
 
@@ -122,19 +133,6 @@ draft: false
 - 배치 튜닝
 - 프로젝트 QA 업무
 - 운영 환경 개선
-
----
-
-### AI Native 플랫폼 개발
-**백엔드 개발** &nbsp;|&nbsp; 2025.12 - 진행중
-
-Claude Code 기반 AI Native 방식으로 이커머스 플랫폼 백엔드 개발 참여
-
-`Kotlin · Spring Boot · Spring Batch · GraphQL(DGS) · MySQL`
-
-- 수백만 셀러가 사용하는 글로벌 이커머스 SaaS 플랫폼(GraphQL 기반) 연동 — 주문/환불/취소 처리 아키텍처 설계 및 구현
-- 이상주문 탐지 및 Dispute(차지백) 이력 추적 시스템 구현
-- 정산 시스템 구축 — 세금계산서 발행, 파트너센터 정산 API, GraphQL 통합
 
 ---
 
